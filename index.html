@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAC nos Ministérios Públicos estaduais — levantamento normativo</title>
+<style>
+:root{--bg:#f7f6f3;--card:#fff;--ink:#16181d;--mut:#6b7280;--line:#e4e1da;--accent:#0f5132;--accent2:#127a4a;--warn:#8a5a00;--amber:#fff6e0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 72px}
+header.hero{border-bottom:3px solid var(--ink);padding-bottom:22px;margin-bottom:28px}
+.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700;color:var(--accent2)}
+h1{font-size:clamp(26px,4vw,40px);line-height:1.12;margin:.35rem 0 .5rem;letter-spacing:-.02em}
+.lead{color:#3f444d;max-width:74ch;margin:0}
+.meta{margin-top:14px;font-size:12.5px;color:var(--mut)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:26px 0 30px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat b{display:block;font-size:30px;line-height:1;letter-spacing:-.02em}
+.stat span{display:block;font-size:12px;color:var(--mut);margin-top:6px}
+h2{font-size:19px;margin:34px 0 10px;letter-spacing:-.01em}
+ul.find{margin:0;padding-left:20px} ul.find li{margin:7px 0}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 12px;position:sticky;top:0;background:linear-gradient(var(--bg) 80%,transparent);padding:10px 0}
+input[type=search],select{font:inherit;font-size:14px;padding:9px 12px;border:1px solid var(--line);border-radius:9px;background:#fff;min-width:220px}
+input[type=search]{flex:1}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.count{font-size:12.5px;color:var(--mut);margin-left:auto}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th{text-align:left;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);padding:11px 14px;border-bottom:1px solid var(--line);background:#fbfaf7}
+td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.row{cursor:pointer} tr.row:hover td{background:#fcfbf8}
+td.uf{font-weight:800;font-size:15px;width:58px}
+.sub{display:block;font-size:12px;color:var(--mut);margin-top:3px;font-weight:400}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.tag.ok{background:#e7f4ec;color:#0f5132} .tag.warn{background:var(--amber);color:var(--warn)} .tag.muted{background:#eef0f3;color:#4b5563}
+tr.det td{display:none;background:#fcfbf8;border-bottom:1px solid var(--line)}
+tr.det.open td{display:table-cell}
+tr.det p{margin:.2rem 0 .75rem;font-size:14px;max-width:95ch}
+tr.det .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:2px}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 14px;border-radius:8px}
+.btn:hover{background:var(--accent2)}
+.method{margin-top:38px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-size:14px}
+.method h3{margin:0 0 8px;font-size:15px}
+.method p{margin:.4rem 0}
+footer{margin-top:30px;font-size:12px;color:var(--mut)}
+@media print{
+ .controls,header.hero .kicker{display:none}
+ body{background:#fff} .stat,.method,table{border:1px solid #ccc}
+ tr.det td{display:table-cell!important}
+ thead{display:table-header-group} tr{break-inside:avoid}
+}
+</style></head>
+<body><div class="wrap">
+<header class="hero">
+  <div class="kicker">Pesquisa normativa · 27 unidades</div>
+  <h1>Termo de Ajustamento de Conduta nos Ministérios Públicos estaduais</h1>
+  <p class="lead">Levantamento das normas internas que regulamentam o TAC nas 26 unidades estaduais e no MPDFT, com identificação do ato vigente, órgão emissor, capítulo dedicado e link oficial verificado.</p>
+  <p class="meta">Pesquisa concluída em 25/11/2026 · 27 portais consultados · todas as fontes abaixo foram abertas e conferidas (HTTP 200 + menção literal ao TAC)</p>
+</header>
+
+<div class="stats">
+  <div class="stat"><b>25/27</b><span>unidades com norma interna vigente sobre o TAC</span></div>
+  <div class="stat"><b>14</b><span>normas editadas ou consolidadas a partir de 2018, após a Res. CNMP 179/2017</span></div>
+  <div class="stat"><b>15</b><span>atos de Colégio de Procuradores / Órgão Especial</span></div>
+  <div class="stat"><b>5</b><span>atos de Conselho Superior</span></div>
+</div>
+
+<h2>O que o levantamento mostra</h2>
+<ul class="find">
+<li><b>O padrão é a norma geral.</b> Em 20 das 25 unidades com regulamentação, o TAC não tem resolução autônoma: ele ocupa um capítulo ou título da resolução que disciplina notícia de fato, inquérito civil, procedimento preparatório e procedimento administrativo.</li>
+<li><b>Só um MP tem resolução dedicada e geral ao TAC</b> — Mato Grosso (Res. CSMP nº 051/2018). Nos demais casos de norma específica (MA 75/2019, PB 019/2018, MS 0006/2019, MG CSMP 3/2017), o recorte é o TAC <i>em improbidade administrativa</i> e o acordo de leniência.</li>
+<li><b>O colegiado é o legislador ordinário da matéria:</b> 15 atos de Colégio de Procuradores/Órgão Especial e 5 de Conselho Superior, contra poucos provimentos e resoluções de PGJ (RJ, RS, SC, MS) ou conjuntos com a Corregedoria (MG, PR).</li>
+<li><b>Convergência de conteúdo:</b> as normas repetem a mesma arquitetura — TAC celebrado nos autos do IC/PP ou no curso da ação judicial, natureza de negócio jurídico com eficácia de título executivo extrajudicial desde a celebração, acompanhamento por procedimento administrativo, multa e execução em caso de descumprimento, publicidade no diário oficial e no site.</li>
+<li><b>Ponto de atenção no TAC em improbidade:</b> o parágrafo único do art. 33 da Res. 008/2015-CPJ do MPSE ainda veda expressamente “transação, acordo ou conciliação, inclusive a celebração de termo de ajustamento de conduta” em improbidade, sob pena de falta funcional — redação anterior à Lei nº 14.230/2021. No MPPI o dispositivo equivalente foi revogado pela Res. CPJ/PI nº 05/2024 (ANPC). Normas específicas de improbidade editadas antes de 2021 (MG, MS) merecem conferência de atualização.</li>
+<li><b>Duas lacunas, não inexistências:</b> Alagoas não tem norma própria e aplica diretamente a Res. CNMP nº 179/2017; em Rondônia a norma não foi localizada em fonte oficial — há apenas indício de Resolução nº 6/2019-CPJ em fonte secundária.</li>
+</ul>
+
+<h2>Quadro comparativo</h2>
+<div class="controls">
+  <input type="search" id="q" placeholder="Buscar por UF, norma, objeto, observação…" aria-label="Buscar">
+  <button class="chip" data-f="all" aria-pressed="true">Todas</button>
+  <button class="chip" data-f="regulamenta" aria-pressed="false">Regulamenta</button>
+  <button class="chip" data-f="sem_norma_local" aria-pressed="false">Sem norma própria</button>
+  <button class="chip" data-f="nao_localizado" aria-pressed="false">Não localizado</button>
+  <select id="org" aria-label="Órgão emissor">
+    <option value="all">Todos os emissores</option>
+    <option value="CPJ / Órgão Especial">Colégio de Procuradores / Órgão Especial</option>
+    <option value="CSMP">Conselho Superior</option>
+    <option value="PGJ">Procuradoria-Geral de Justiça</option>
+    <option value="PGJ + CGMP">PGJ + Corregedoria</option>
+    <option value="—">Sem norma</option>
+  </select>
+  <span class="count" id="count">27 unidades</span>
+</div>
+<table>
+<thead><tr><th>UF</th><th>Norma vigente</th><th>Situação</th></tr></thead>
+<tbody>
+<tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2012"
+ data-busca="ac acre mpac resolução cpj nº 028/2012 (compilada pelas res. cpj 90/2021, 200/2025 e 205/2026) disciplina o inquérito civil e os demais procedimentos civis de investigação, as audiências públicas, os compromissos de ajustamento de conduta, as recomendações e o procedimento administrativo. atualizada expressamente pelas res. cnmp 159, 161, 174 e 179/2017, 193/2018 e 229/2021. complementada pela recomendação nº 03/2023/coger (procedimento de fiscalização de tac).">
+<td class="uf">AC</td>
+<td class="norma"><b>Resolução CPJ nº 028/2012 (compilada pelas Res. CPJ 90/2021, 200/2025 e 205/2026)</b><span class="sub">MPAC · CPJ / Órgão Especial · 2012</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2012"
+ data-busca="ac acre mpac resolução cpj nº 028/2012 (compilada pelas res. cpj 90/2021, 200/2025 e 205/2026) disciplina o inquérito civil e os demais procedimentos civis de investigação, as audiências públicas, os compromissos de ajustamento de conduta, as recomendações e o procedimento administrativo. atualizada expressamente pelas res. cnmp 159, 161, 174 e 179/2017, 193/2018 e 229/2021. complementada pela recomendação nº 03/2023/coger (procedimento de fiscalização de tac).">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Norma geral dos procedimentos civis — art. 7º (definição do TAC) e art. 5º, I (procedimento administrativo de acompanhamento)</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina o inquérito civil e os demais procedimentos civis de investigação, as audiências públicas, os compromissos de ajustamento de conduta, as recomendações e o procedimento administrativo.</p>
+  <p class="lbl">Observações</p><p>Atualizada expressamente pelas Res. CNMP 159, 161, 174 e 179/2017, 193/2018 e 229/2021. Complementada pela Recomendação nº 03/2023/COGER (procedimento de fiscalização de TAC).</p>
+  <p><a class="btn" href="https://www.mpac.mp.br/wp-content/uploads/Resolucao_no_028-2012_-_Disicplina_o_Inquerito_Civil_-_Compilada_pela_Res._n._90-2021__200.2025_e_205.2026.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="sem_norma_local" data-orgao="—" data-ano="—"
+ data-busca="al alagoas mpal sem norma própria localizada a página da corregedoria-geral sobre &#x27;ajustamento de conduta&#x27; reproduz apenas a resolução cnmp nº 179/2017; não foi localizada resolução do cpj/csmp regulando o tac. a lista de resoluções do colégio de procuradores não tem ato com &#x27;ajustamento de conduta&#x27; na ementa; atos do doe aplicam diretamente as res. cnmp 174/2017 e 179/2017. portal com busca limitada — não se conclui que inexista.">
+<td class="uf">AL</td>
+<td class="norma"><b>Sem norma própria localizada</b><span class="sub">MPAL · — · —</span></td>
+<td class="sit"><span class="tag warn">Sem norma própria</span></td>
+</tr>
+<tr class="det" data-status="sem_norma_local" data-orgao="—" data-ano="—"
+ data-busca="al alagoas mpal sem norma própria localizada a página da corregedoria-geral sobre &#x27;ajustamento de conduta&#x27; reproduz apenas a resolução cnmp nº 179/2017; não foi localizada resolução do cpj/csmp regulando o tac. a lista de resoluções do colégio de procuradores não tem ato com &#x27;ajustamento de conduta&#x27; na ementa; atos do doe aplicam diretamente as res. cnmp 174/2017 e 179/2017. portal com busca limitada — não se conclui que inexista.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Aplicação direta da Resolução CNMP nº 179/2017</p>
+  <p class="lbl">Objeto da norma</p><p>A página da Corregedoria-Geral sobre &#x27;Ajustamento de Conduta&#x27; reproduz apenas a Resolução CNMP nº 179/2017; não foi localizada resolução do CPJ/CSMP regulando o TAC.</p>
+  <p class="lbl">Observações</p><p>A lista de resoluções do Colégio de Procuradores não tem ato com &#x27;ajustamento de conduta&#x27; na ementa; atos do DOE aplicam diretamente as Res. CNMP 174/2017 e 179/2017. Portal com busca limitada — não se conclui que inexista.</p>
+  <p><a class="btn" href="https://www.mpal.mp.br/?page_id=25735" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CSMP" data-ano="2015"
+ data-busca="am amazonas mpam resolução nº 006/2015-csmp (alterada por 9 resoluções até 048/2022) disciplina a tramitação dos procedimentos extrajudiciais civis e criminais, o compromisso de ajustamento de conduta e a recomendação. a res. 318/2008-csmp foi a primeira norma específica sobre tac no mpam, hoje absorvida pela 006/2015.">
+<td class="uf">AM</td>
+<td class="norma"><b>Resolução nº 006/2015-CSMP (alterada por 9 resoluções até 048/2022)</b><span class="sub">MPAM · CSMP · 2015</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CSMP" data-ano="2015"
+ data-busca="am amazonas mpam resolução nº 006/2015-csmp (alterada por 9 resoluções até 048/2022) disciplina a tramitação dos procedimentos extrajudiciais civis e criminais, o compromisso de ajustamento de conduta e a recomendação. a res. 318/2008-csmp foi a primeira norma específica sobre tac no mpam, hoje absorvida pela 006/2015.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo VI — art. 68 e seguintes (inclui TAC parcial/provisório, art. 68-A)</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina a tramitação dos procedimentos extrajudiciais civis e criminais, o compromisso de ajustamento de conduta e a recomendação.</p>
+  <p class="lbl">Observações</p><p>A Res. 318/2008-CSMP foi a primeira norma específica sobre TAC no MPAM, hoje absorvida pela 006/2015.</p>
+  <p><a class="btn" href="https://resolucoes.mpam.mp.br/resolucoes/get-pdf/199" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2018"
+ data-busca="ap amapá mpap resolução nº 002/2018-cpj (compilada com as res. 09/2018, 04/2019 e 02/2020-cpj) disciplina os procedimentos extrajudiciais, as audiências públicas, os compromissos de ajustamento de conduta e as recomendações; veda dispensa de obrigações e prevê acompanhamento por procedimento administrativo. texto compilado vigente, que incorpora a res. 02/2020-cpj.">
+<td class="uf">AP</td>
+<td class="norma"><b>Resolução nº 002/2018-CPJ (compilada com as Res. 09/2018, 04/2019 e 02/2020-CPJ)</b><span class="sub">MPAP · CPJ / Órgão Especial · 2018</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2018"
+ data-busca="ap amapá mpap resolução nº 002/2018-cpj (compilada com as res. 09/2018, 04/2019 e 02/2020-cpj) disciplina os procedimentos extrajudiciais, as audiências públicas, os compromissos de ajustamento de conduta e as recomendações; veda dispensa de obrigações e prevê acompanhamento por procedimento administrativo. texto compilado vigente, que incorpora a res. 02/2020-cpj.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo VII — arts. 74 a 79</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina os procedimentos extrajudiciais, as audiências públicas, os compromissos de ajustamento de conduta e as recomendações; veda dispensa de obrigações e prevê acompanhamento por procedimento administrativo.</p>
+  <p class="lbl">Observações</p><p>Texto compilado vigente, que incorpora a Res. 02/2020-CPJ.</p>
+  <p><a class="btn" href="https://www.mpap.mp.br/intranet/uploads/banco_publicacoes/2025_06/23c6c0db92068d15a1bf66e5e07945f16041ac68.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2022"
+ data-busca="ba bahia mpba resolução nº 11, de 11/04/2022 disciplina notícia de fato, procedimento administrativo, pp, inquérito civil, tac, anpc, recomendação e audiência pública; conteúdo obrigatório do tac, aditamento com homologação e celebração em qualquer fase. revogou a res. nº 6/2009. publicada no dje do tjba nº 3.078, de 13/04/2022.">
+<td class="uf">BA</td>
+<td class="norma"><b>Resolução nº 11, de 11/04/2022</b><span class="sub">MPBA · CPJ / Órgão Especial · 2022</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2022"
+ data-busca="ba bahia mpba resolução nº 11, de 11/04/2022 disciplina notícia de fato, procedimento administrativo, pp, inquérito civil, tac, anpc, recomendação e audiência pública; conteúdo obrigatório do tac, aditamento com homologação e celebração em qualquer fase. revogou a res. nº 6/2009. publicada no dje do tjba nº 3.078, de 13/04/2022.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Título V, Capítulo II — arts. 69 e seguintes</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina notícia de fato, procedimento administrativo, PP, inquérito civil, TAC, ANPC, recomendação e audiência pública; conteúdo obrigatório do TAC, aditamento com homologação e celebração em qualquer fase.</p>
+  <p class="lbl">Observações</p><p>Revogou a Res. nº 6/2009. Publicada no DJe do TJBA nº 3.078, de 13/04/2022.</p>
+  <p><a class="btn" href="https://www.mpba.mp.br/sites/default/files/biblioteca/orgaos-colegiados/orgao-especial/resolucoes/2022/publicacao_resolucao_n._11_de_2022.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2016"
+ data-busca="ce ceará mpce resolução nº 036/2016-oecpj (consolidada pelas res. 040/2017, 068/2020, 094/2022, 106/2022, 109/2023 e 110/2023) regulamenta os feitos extrajudiciais cíveis e o tac: conteúdo obrigatório, título executivo, arquivamento parcial, procedimento de acompanhamento, vedação de dispensa e publicação obrigatória no diário de justiça e no site. não há resolução autônoma sobre tac no mpce; a matéria está no capítulo v da norma geral (versão consolidada de 2024).">
+<td class="uf">CE</td>
+<td class="norma"><b>Resolução nº 036/2016-OECPJ (consolidada pelas Res. 040/2017, 068/2020, 094/2022, 106/2022, 109/2023 e 110/2023)</b><span class="sub">MPCE · CPJ / Órgão Especial · 2016</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2016"
+ data-busca="ce ceará mpce resolução nº 036/2016-oecpj (consolidada pelas res. 040/2017, 068/2020, 094/2022, 106/2022, 109/2023 e 110/2023) regulamenta os feitos extrajudiciais cíveis e o tac: conteúdo obrigatório, título executivo, arquivamento parcial, procedimento de acompanhamento, vedação de dispensa e publicação obrigatória no diário de justiça e no site. não há resolução autônoma sobre tac no mpce; a matéria está no capítulo v da norma geral (versão consolidada de 2024).">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo V — arts. 33 a 35</p>
+  <p class="lbl">Objeto da norma</p><p>Regulamenta os feitos extrajudiciais cíveis e o TAC: conteúdo obrigatório, título executivo, arquivamento parcial, procedimento de acompanhamento, vedação de dispensa e publicação obrigatória no Diário de Justiça e no site.</p>
+  <p class="lbl">Observações</p><p>Não há resolução autônoma sobre TAC no MPCE; a matéria está no Capítulo V da norma geral (versão consolidada de 2024).</p>
+  <p><a class="btn" href="https://www.mpce.mp.br/wp-content/uploads/2024/04/Resolucao-no-036-2016-Disciplina-e-regulamenta-a-instrauracao-e-a-tramitacao-de-feitos-extrajudiciais-CONSOLIDADA-1.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CSMP" data-ano="2005"
+ data-busca="df distrito federal mpdft resolução csmpdft nº 66, de 17/10/2005 (alterada, inclusive pela res. nº 318) regulamenta o inquérito civil, o pp, audiências públicas e recomendações; disciplina requisitos de clareza e liquidez, plano de trabalho em casos complexos, novação, multa por obrigação e registro em banco de dados. não confundir com a res. csmpdft nº 295/2022, sobre &#x27;tac funcional&#x27; (transação disciplinar de membros) — instituto distinto.">
+<td class="uf">DF</td>
+<td class="norma"><b>Resolução CSMPDFT nº 66, de 17/10/2005 (alterada, inclusive pela Res. nº 318)</b><span class="sub">MPDFT · CSMP · 2005</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CSMP" data-ano="2005"
+ data-busca="df distrito federal mpdft resolução csmpdft nº 66, de 17/10/2005 (alterada, inclusive pela res. nº 318) regulamenta o inquérito civil, o pp, audiências públicas e recomendações; disciplina requisitos de clareza e liquidez, plano de trabalho em casos complexos, novação, multa por obrigação e registro em banco de dados. não confundir com a res. csmpdft nº 295/2022, sobre &#x27;tac funcional&#x27; (transação disciplinar de membros) — instituto distinto.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Título II — arts. 19 a 24</p>
+  <p class="lbl">Objeto da norma</p><p>Regulamenta o inquérito civil, o PP, audiências públicas e recomendações; disciplina requisitos de clareza e liquidez, plano de trabalho em casos complexos, novação, multa por obrigação e registro em banco de dados.</p>
+  <p class="lbl">Observações</p><p>Não confundir com a Res. CSMPDFT nº 295/2022, sobre &#x27;TAC Funcional&#x27; (transação disciplinar de membros) — instituto distinto.</p>
+  <p><a class="btn" href="https://www.mpdft.mp.br/portal/images/pdf/unidades/conselho_superior/atos_conselho_superior_resolucoes/resolucao_66_csmpdft_alterada_res_318.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2014"
+ data-busca="es espírito santo mpes resolução copj nº 006, de 07/08/2014 (alterada pelas res. copj 014/2015 e 012/2017) disciplina a tramitação dos autos extrajudiciais na área de direitos difusos, coletivos, individuais homogêneos e individuais indisponíveis e o compromisso de ajustamento de conduta. ementa confirmada no índice oficial de resoluções de 2014; o pdf apontado pela página está em domínio desativado (antigo.mpes.mp.br). há comissão revisora constituída em 2023.">
+<td class="uf">ES</td>
+<td class="norma"><b>Resolução COPJ nº 006, de 07/08/2014 (alterada pelas Res. COPJ 014/2015 e 012/2017)</b><span class="sub">MPES · CPJ / Órgão Especial · 2014</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2014"
+ data-busca="es espírito santo mpes resolução copj nº 006, de 07/08/2014 (alterada pelas res. copj 014/2015 e 012/2017) disciplina a tramitação dos autos extrajudiciais na área de direitos difusos, coletivos, individuais homogêneos e individuais indisponíveis e o compromisso de ajustamento de conduta. ementa confirmada no índice oficial de resoluções de 2014; o pdf apontado pela página está em domínio desativado (antigo.mpes.mp.br). há comissão revisora constituída em 2023.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Norma geral de tramitação dos autos extrajudiciais, com disciplina do TAC</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina a tramitação dos autos extrajudiciais na área de direitos difusos, coletivos, individuais homogêneos e individuais indisponíveis e o compromisso de ajustamento de conduta.</p>
+  <p class="lbl">Observações</p><p>Ementa confirmada no índice oficial de resoluções de 2014; o PDF apontado pela página está em domínio desativado (antigo.mpes.mp.br). Há comissão revisora constituída em 2023.</p>
+  <p><a class="btn" href="https://mpes.mp.br/resolucoes-de-2014" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2018"
+ data-busca="go goiás mpgo resolução cpj nº 09, de 27/08/2018 (alterada pelas res. cpj 09/2020, 11/2020, 01/2021 e oe-cpj 6/2026) disciplina a tramitação dos autos extrajudiciais, o tac (requisitos, conteúdo, prazos, publicidade no domp em 15 dias, multa e execução) e a recomendação. texto consolidado no portal; a res. oe-cpj 6/2026 altera a tramitação digital sem mexer no capítulo do tac.">
+<td class="uf">GO</td>
+<td class="norma"><b>Resolução CPJ nº 09, de 27/08/2018 (alterada pelas Res. CPJ 09/2020, 11/2020, 01/2021 e OE-CPJ 6/2026)</b><span class="sub">MPGO · CPJ / Órgão Especial · 2018</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2018"
+ data-busca="go goiás mpgo resolução cpj nº 09, de 27/08/2018 (alterada pelas res. cpj 09/2020, 11/2020, 01/2021 e oe-cpj 6/2026) disciplina a tramitação dos autos extrajudiciais, o tac (requisitos, conteúdo, prazos, publicidade no domp em 15 dias, multa e execução) e a recomendação. texto consolidado no portal; a res. oe-cpj 6/2026 altera a tramitação digital sem mexer no capítulo do tac.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo V — arts. 47 a 58</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina a tramitação dos autos extrajudiciais, o TAC (requisitos, conteúdo, prazos, publicidade no DOMP em 15 dias, multa e execução) e a recomendação.</p>
+  <p class="lbl">Observações</p><p>Texto consolidado no portal; a Res. OE-CPJ 6/2026 altera a tramitação digital sem mexer no capítulo do TAC.</p>
+  <p><a class="btn" href="https://www.mpgo.mp.br/portal/arquivos/2021/05/20/17_30_41_491_Resolu%C3%A7%C3%A3o_CPJ_n._09_2018_disciplina_tramita%C3%A7%C3%A3o_autos_extrajudicias_atualizado_com_Resolu%C3%A7%C3%A3o_CPJ_n._01_2021_Consolida%C3%A7%C3%A3o_2021.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2019"
+ data-busca="ma maranhão mpma resolução nº 75/2019-cpmp, de 30/05/2019 estabelece parâmetros materiais e procedimentais para celebração de compromisso de ajustamento de conduta e acordo de leniência em improbidade administrativa (lei 8.429/92) e em atos contra a administração pública (lei 12.846/2013). publicada no domp nº 102/2019 (04/06/2019). a página oficial da resolução existe, mas o link &#x27;íntegra&#x27; retorna erro; por isso o link é o do oficial.">
+<td class="uf">MA</td>
+<td class="norma"><b>Resolução nº 75/2019-CPMP, de 30/05/2019</b><span class="sub">MPMA · CPJ / Órgão Especial · 2019</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2019"
+ data-busca="ma maranhão mpma resolução nº 75/2019-cpmp, de 30/05/2019 estabelece parâmetros materiais e procedimentais para celebração de compromisso de ajustamento de conduta e acordo de leniência em improbidade administrativa (lei 8.429/92) e em atos contra a administração pública (lei 12.846/2013). publicada no domp nº 102/2019 (04/06/2019). a página oficial da resolução existe, mas o link &#x27;íntegra&#x27; retorna erro; por isso o link é o do oficial.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Norma específica: TAC e acordo de leniência em improbidade</p>
+  <p class="lbl">Objeto da norma</p><p>Estabelece parâmetros materiais e procedimentais para celebração de Compromisso de Ajustamento de Conduta e Acordo de Leniência em improbidade administrativa (Lei 8.429/92) e em atos contra a Administração Pública (Lei 12.846/2013).</p>
+  <p class="lbl">Observações</p><p>Publicada no DOMP nº 102/2019 (04/06/2019). A página oficial da resolução existe, mas o link &#x27;íntegra&#x27; retorna erro; por isso o link é o DO oficial.</p>
+  <p><a class="btn" href="https://cdn-0.mpma.mp.br/diario/1022019-04062019.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="PGJ + CGMP" data-ano="2009"
+ data-busca="mg minas gerais mpmg resolução conjunta pgj/cgmp nº 3, de 20/08/2009 (cap. xi, arts. 20 e 20-a, com redação da res. conjunta 4/2018); res. csmp nº 3/2017 (improbidade) regulamenta o inquérito civil e o pp e, no cap. xi, o tac: cabimento, conteúdo, registro integral no sru e observância da resolução cnmp nº 179/2017. texto compilado no mp normas (ceaf/mpmg). o manual de atuação funcional tem capítulo sobre tac, mas é orientação, não norma.">
+<td class="uf">MG</td>
+<td class="norma"><b>Resolução Conjunta PGJ/CGMP nº 3, de 20/08/2009 (Cap. XI, arts. 20 e 20-A, com redação da Res. Conjunta 4/2018); Res. CSMP nº 3/2017 (improbidade)</b><span class="sub">MPMG · PGJ + CGMP · 2009</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="PGJ + CGMP" data-ano="2009"
+ data-busca="mg minas gerais mpmg resolução conjunta pgj/cgmp nº 3, de 20/08/2009 (cap. xi, arts. 20 e 20-a, com redação da res. conjunta 4/2018); res. csmp nº 3/2017 (improbidade) regulamenta o inquérito civil e o pp e, no cap. xi, o tac: cabimento, conteúdo, registro integral no sru e observância da resolução cnmp nº 179/2017. texto compilado no mp normas (ceaf/mpmg). o manual de atuação funcional tem capítulo sobre tac, mas é orientação, não norma.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo XI — arts. 20 e 20-A</p>
+  <p class="lbl">Objeto da norma</p><p>Regulamenta o inquérito civil e o PP e, no Cap. XI, o TAC: cabimento, conteúdo, registro integral no SRU e observância da Resolução CNMP nº 179/2017.</p>
+  <p class="lbl">Observações</p><p>Texto compilado no MP Normas (CEAF/MPMG). O Manual de Atuação Funcional tem capítulo sobre TAC, mas é orientação, não norma.</p>
+  <p><a class="btn" href="https://mpnormas.mpmg.mp.br/files/1/1/1-1-C44C-32-ResConj_PGJ_CGMP_03_2009_at.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2007"
+ data-busca="ms mato grosso do sul mpms resolução nº 0015/2007-pgj, de 27/11/2007 (alterada pela res. 005/2019-cpj); res. 0006/2019-cpj (improbidade/leniência) disciplina o inquérito civil e demais investigações, audiências públicas, compromissos de ajustamento de conduta e recomendações, com prazos, forma de celebração e remessa ao conselho superior. texto compilado oficial (download 8816). tac em improbidade tem norma própria (res. 0006/2019-cpj) e disciplina de remessa ao csmp no enunciado nº 23/2020.">
+<td class="uf">MS</td>
+<td class="norma"><b>Resolução nº 0015/2007-PGJ, de 27/11/2007 (alterada pela Res. 005/2019-CPJ); Res. 0006/2019-CPJ (improbidade/leniência)</b><span class="sub">MPMS · CPJ / Órgão Especial · 2007</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2007"
+ data-busca="ms mato grosso do sul mpms resolução nº 0015/2007-pgj, de 27/11/2007 (alterada pela res. 005/2019-cpj); res. 0006/2019-cpj (improbidade/leniência) disciplina o inquérito civil e demais investigações, audiências públicas, compromissos de ajustamento de conduta e recomendações, com prazos, forma de celebração e remessa ao conselho superior. texto compilado oficial (download 8816). tac em improbidade tem norma própria (res. 0006/2019-cpj) e disciplina de remessa ao csmp no enunciado nº 23/2020.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Norma geral do inquérito civil, com disciplina do TAC</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina o inquérito civil e demais investigações, audiências públicas, compromissos de ajustamento de conduta e recomendações, com prazos, forma de celebração e remessa ao Conselho Superior.</p>
+  <p class="lbl">Observações</p><p>Texto compilado oficial (download 8816). TAC em improbidade tem norma própria (Res. 0006/2019-CPJ) e disciplina de remessa ao CSMP no Enunciado nº 23/2020.</p>
+  <p><a class="btn" href="https://www.mpms.mp.br/atos-e-normas/download/8816" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CSMP" data-ano="2018"
+ data-busca="mt mato grosso mpmt resolução nº 051/2018-csmp, de 05/02/2018 (alterada pelas res. 070/2020, 087/2021, 092/2022, 093/2022 e 105/2023) regulamenta a tomada do compromisso de ajustamento de conduta no mpmt: parâmetros de celebração, conteúdo das cláusulas, acompanhamento, multa e execução judicial em 60 dias. norma dedicada exclusivamente ao tac, em sintonia com a lei 7.347/85; a res. 052/2018-csmp (inquérito civil) apenas remete a ela.">
+<td class="uf">MT</td>
+<td class="norma"><b>Resolução nº 051/2018-CSMP, de 05/02/2018 (alterada pelas Res. 070/2020, 087/2021, 092/2022, 093/2022 e 105/2023)</b><span class="sub">MPMT · CSMP · 2018</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CSMP" data-ano="2018"
+ data-busca="mt mato grosso mpmt resolução nº 051/2018-csmp, de 05/02/2018 (alterada pelas res. 070/2020, 087/2021, 092/2022, 093/2022 e 105/2023) regulamenta a tomada do compromisso de ajustamento de conduta no mpmt: parâmetros de celebração, conteúdo das cláusulas, acompanhamento, multa e execução judicial em 60 dias. norma dedicada exclusivamente ao tac, em sintonia com a lei 7.347/85; a res. 052/2018-csmp (inquérito civil) apenas remete a ela.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Norma específica sobre a tomada do TAC</p>
+  <p class="lbl">Objeto da norma</p><p>Regulamenta a tomada do Compromisso de Ajustamento de Conduta no MPMT: parâmetros de celebração, conteúdo das cláusulas, acompanhamento, multa e execução judicial em 60 dias.</p>
+  <p class="lbl">Observações</p><p>Norma dedicada exclusivamente ao TAC, em sintonia com a Lei 7.347/85; a Res. 052/2018-CSMP (inquérito civil) apenas remete a ela.</p>
+  <p><a class="btn" href="https://mpmt.mp.br/site/storage/webdisco/arquivos/CSMP/Resolu%C3%A7%C3%A3o%20n%C2%BA%20051-2018-CSMP%20-%20TAC.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2024"
+ data-busca="pa pará mppa resolução nº 012/2024-cpj, de 03/10/2024 dispõe sobre a instauração e tramitação dos procedimentos extrajudiciais cíveis e sobre o tac, a recomendação, o anpc e o acordo de leniência. publicada no doe nº 35.998, de 16/10/2024; revogou a res. 007/2019-cpj.">
+<td class="uf">PA</td>
+<td class="norma"><b>Resolução nº 012/2024-CPJ, de 03/10/2024</b><span class="sub">MPPA · CPJ / Órgão Especial · 2024</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2024"
+ data-busca="pa pará mppa resolução nº 012/2024-cpj, de 03/10/2024 dispõe sobre a instauração e tramitação dos procedimentos extrajudiciais cíveis e sobre o tac, a recomendação, o anpc e o acordo de leniência. publicada no doe nº 35.998, de 16/10/2024; revogou a res. 007/2019-cpj.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo próprio — arts. 60 e seguintes</p>
+  <p class="lbl">Objeto da norma</p><p>Dispõe sobre a instauração e tramitação dos procedimentos extrajudiciais cíveis e sobre o TAC, a recomendação, o ANPC e o acordo de leniência.</p>
+  <p class="lbl">Observações</p><p>Publicada no DOE nº 35.998, de 16/10/2024; revogou a Res. 007/2019-CPJ.</p>
+  <p><a class="btn" href="https://www.mppa.mp.br/data/files/FC/A3/F4/9A/DE59291002E18109180808FF/Resolucao%2012_2024_CPJ.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2013"
+ data-busca="pb paraíba mppb res. cpj nº 04/2013, cap. v, art. 22 (alt. 18/2018, 060/2022, 078/2024) + res. cpj nº 019/2018 (tac e leniência em improbidade) rito geral do tac na resolução dos procedimentos extrajudiciais; a res. 019/2018 fixa parâmetros materiais e procedimentais para tac e acordo de leniência em improbidade (lei 8.429/92) e lei 12.846/2013. link verificado: res. cpj nº 019/2018 (texto integral). o texto consolidado da res. 04/2013 não foi localizado em link oficial aberto.">
+<td class="uf">PB</td>
+<td class="norma"><b>Res. CPJ nº 04/2013, Cap. V, art. 22 (alt. 18/2018, 060/2022, 078/2024) + Res. CPJ nº 019/2018 (TAC e leniência em improbidade)</b><span class="sub">MPPB · CPJ / Órgão Especial · 2013</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2013"
+ data-busca="pb paraíba mppb res. cpj nº 04/2013, cap. v, art. 22 (alt. 18/2018, 060/2022, 078/2024) + res. cpj nº 019/2018 (tac e leniência em improbidade) rito geral do tac na resolução dos procedimentos extrajudiciais; a res. 019/2018 fixa parâmetros materiais e procedimentais para tac e acordo de leniência em improbidade (lei 8.429/92) e lei 12.846/2013. link verificado: res. cpj nº 019/2018 (texto integral). o texto consolidado da res. 04/2013 não foi localizado em link oficial aberto.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo V da norma geral + norma específica para improbidade</p>
+  <p class="lbl">Objeto da norma</p><p>Rito geral do TAC na resolução dos procedimentos extrajudiciais; a Res. 019/2018 fixa parâmetros materiais e procedimentais para TAC e acordo de leniência em improbidade (Lei 8.429/92) e Lei 12.846/2013.</p>
+  <p class="lbl">Observações</p><p>Link verificado: Res. CPJ nº 019/2018 (texto integral). O texto consolidado da Res. 04/2013 não foi localizado em link oficial aberto.</p>
+  <p><a class="btn" href="https://ged-api.mppb.mp.br/public/arquivos/2000603/file?content=inline" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CSMP" data-ano="2019"
+ data-busca="pe pernambuco mppe resolução csmp nº 003/2019 (consolidada com a res. csmp nº 03/2025) disciplina notícia de fato, procedimento administrativo, inquérito civil, pp, compromisso de ajustamento, audiência pública e recomendação. norma vigente consolidada. o mppe tem ainda resolução sobre &#x27;tac disciplinar&#x27; (doe de 09/11/2023) — instituto distinto.">
+<td class="uf">PE</td>
+<td class="norma"><b>Resolução CSMP nº 003/2019 (consolidada com a Res. CSMP nº 03/2025)</b><span class="sub">MPPE · CSMP · 2019</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CSMP" data-ano="2019"
+ data-busca="pe pernambuco mppe resolução csmp nº 003/2019 (consolidada com a res. csmp nº 03/2025) disciplina notícia de fato, procedimento administrativo, inquérito civil, pp, compromisso de ajustamento, audiência pública e recomendação. norma vigente consolidada. o mppe tem ainda resolução sobre &#x27;tac disciplinar&#x27; (doe de 09/11/2023) — instituto distinto.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Título IV — art. 39 e seguintes</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina notícia de fato, procedimento administrativo, inquérito civil, PP, compromisso de ajustamento, audiência pública e recomendação.</p>
+  <p class="lbl">Observações</p><p>Norma vigente consolidada. O MPPE tem ainda resolução sobre &#x27;TAC disciplinar&#x27; (DOE de 09/11/2023) — instituto distinto.</p>
+  <p><a class="btn" href="https://portal.mppe.mp.br/documents/d/guest/resolucao-csmp-n-03-2019-doe-mppe-03-10-2025-edicao-mppe-1792-disciplina-noticia-de-fato-procedimentos-administrativo-e-preparatorio-inquerito-civil-compromisso-de-ajustamento-audiencia-publica-e-recomendacao-consolidada?download=true" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2008"
+ data-busca="pi piauí mppi resolução cpj/pi nº 001, de 12/08/2008 (seção iii, arts. 24 a 30) regulamenta a instauração do inquérito civil e do pp e disciplina o tac: requisitos, conteúdo, operacionalização e consequências do descumprimento. pdf é digitalização (texto confirmado por ocr). o parágrafo único do art. 24 foi revogado pela res. cpj/pi 05/2024 (anpc); há também a res. 04/2024, sobre tac disciplinar.">
+<td class="uf">PI</td>
+<td class="norma"><b>Resolução CPJ/PI nº 001, de 12/08/2008 (Seção III, arts. 24 a 30)</b><span class="sub">MPPI · CPJ / Órgão Especial · 2008</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2008"
+ data-busca="pi piauí mppi resolução cpj/pi nº 001, de 12/08/2008 (seção iii, arts. 24 a 30) regulamenta a instauração do inquérito civil e do pp e disciplina o tac: requisitos, conteúdo, operacionalização e consequências do descumprimento. pdf é digitalização (texto confirmado por ocr). o parágrafo único do art. 24 foi revogado pela res. cpj/pi 05/2024 (anpc); há também a res. 04/2024, sobre tac disciplinar.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Seção III — arts. 24 a 30</p>
+  <p class="lbl">Objeto da norma</p><p>Regulamenta a instauração do inquérito civil e do PP e disciplina o TAC: requisitos, conteúdo, operacionalização e consequências do descumprimento.</p>
+  <p class="lbl">Observações</p><p>PDF é digitalização (texto confirmado por OCR). O parágrafo único do art. 24 foi revogado pela Res. CPJ/PI 05/2024 (ANPC); há também a Res. 04/2024, sobre TAC disciplinar.</p>
+  <p><a class="btn" href="https://transparencia.mppi.mp.br/storage/documentos/2008/03/44378554b7f3190f7de21c70247e85a3/doc.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="PGJ + CGMP" data-ano="2019"
+ data-busca="pr paraná mppr ato conjunto nº 001/2019-pgj/cgmp (consolidado com os atos conjuntos 01, 02 e 03/2022) consolida o rito da notícia de fato, ic, pp, procedimento administrativo, recomendação, tac, anpc e acordo de leniência na atuação extrajudicial cível. art. 116 alterado pelo ato conjunto 01/2022 (tac em improbidade restrito a ato doloso com dano efetivo ao erário, na linha da lei 14.230/2021).">
+<td class="uf">PR</td>
+<td class="norma"><b>Ato Conjunto nº 001/2019-PGJ/CGMP (consolidado com os Atos Conjuntos 01, 02 e 03/2022)</b><span class="sub">MPPR · PGJ + CGMP · 2019</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="PGJ + CGMP" data-ano="2019"
+ data-busca="pr paraná mppr ato conjunto nº 001/2019-pgj/cgmp (consolidado com os atos conjuntos 01, 02 e 03/2022) consolida o rito da notícia de fato, ic, pp, procedimento administrativo, recomendação, tac, anpc e acordo de leniência na atuação extrajudicial cível. art. 116 alterado pelo ato conjunto 01/2022 (tac em improbidade restrito a ato doloso com dano efetivo ao erário, na linha da lei 14.230/2021).">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Título V — art. 115 e seguintes</p>
+  <p class="lbl">Objeto da norma</p><p>Consolida o rito da notícia de fato, IC, PP, procedimento administrativo, recomendação, TAC, ANPC e acordo de leniência na atuação extrajudicial cível.</p>
+  <p class="lbl">Observações</p><p>Art. 116 alterado pelo Ato Conjunto 01/2022 (TAC em improbidade restrito a ato doloso com dano efetivo ao erário, na linha da Lei 14.230/2021).</p>
+  <p><a class="btn" href="https://mppr.mp.br/sites/default/arquivos_restritos/files/migrados/File/cgmp/2022/atoconjunto012019consolidado.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="PGJ" data-ano="2018"
+ data-busca="rj rio de janeiro mprj resolução gpgj nº 2.227, de 12/07/2018 disciplina a atuação extrajudicial cível e seus instrumentos (notícia de fato, ic, procedimento administrativo, tac, recomendação, audiência pública e acp). versão consolidada; o § 2º do art. 40 foi revogado pela res. gpgj 2.469/2022. a res. gpgj 1.522/2009 (art. 23) foi superada.">
+<td class="uf">RJ</td>
+<td class="norma"><b>Resolução GPGJ nº 2.227, de 12/07/2018</b><span class="sub">MPRJ · PGJ · 2018</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="PGJ" data-ano="2018"
+ data-busca="rj rio de janeiro mprj resolução gpgj nº 2.227, de 12/07/2018 disciplina a atuação extrajudicial cível e seus instrumentos (notícia de fato, ic, procedimento administrativo, tac, recomendação, audiência pública e acp). versão consolidada; o § 2º do art. 40 foi revogado pela res. gpgj 2.469/2022. a res. gpgj 1.522/2009 (art. 23) foi superada.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Título IV — arts. 40 a 45</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina a atuação extrajudicial cível e seus instrumentos (notícia de fato, IC, procedimento administrativo, TAC, recomendação, audiência pública e ACP).</p>
+  <p class="lbl">Observações</p><p>Versão consolidada; o § 2º do art. 40 foi revogado pela Res. GPGJ 2.469/2022. A Res. GPGJ 1.522/2009 (art. 23) foi superada.</p>
+  <p><a class="btn" href="https://www.mprj.mp.br/documents/20184/2156695/consolidado_2227.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2018"
+ data-busca="rn rio grande do norte mprn resolução nº 012/2018-cpj (alterada pela res. nº 004/2025-cpj) dá nova regulamentação à notícia de fato, ao procedimento administrativo, ao pp, ao inquérito civil, à audiência pública, à recomendação e ao termo de ajustamento de conduta. ementa e vigência confirmadas no índice oficial (archivum). ressalva: o pdf individual do ato está com link quebrado no próprio índice; a existência de capítulo próprio é corroborada por despachos no doe-rn que citam os arts. 8º e 12.">
+<td class="uf">RN</td>
+<td class="norma"><b>Resolução nº 012/2018-CPJ (alterada pela Res. nº 004/2025-CPJ)</b><span class="sub">MPRN · CPJ / Órgão Especial · 2018</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2018"
+ data-busca="rn rio grande do norte mprn resolução nº 012/2018-cpj (alterada pela res. nº 004/2025-cpj) dá nova regulamentação à notícia de fato, ao procedimento administrativo, ao pp, ao inquérito civil, à audiência pública, à recomendação e ao termo de ajustamento de conduta. ementa e vigência confirmadas no índice oficial (archivum). ressalva: o pdf individual do ato está com link quebrado no próprio índice; a existência de capítulo próprio é corroborada por despachos no doe-rn que citam os arts. 8º e 12.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Norma geral dos procedimentos extrajudiciais, com disciplina do TAC</p>
+  <p class="lbl">Objeto da norma</p><p>Dá nova regulamentação à notícia de fato, ao procedimento administrativo, ao PP, ao inquérito civil, à audiência pública, à recomendação e ao termo de ajustamento de conduta.</p>
+  <p class="lbl">Observações</p><p>Ementa e vigência confirmadas no índice oficial (Archivum). Ressalva: o PDF individual do ato está com link quebrado no próprio índice; a existência de capítulo próprio é corroborada por despachos no DOE-RN que citam os arts. 8º e 12.</p>
+  <p><a class="btn" href="https://archivum.mprn.mp.br/cpj/resolucao/" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="nao_localizado" data-orgao="—" data-ano="2019"
+ data-busca="ro rondônia mpro não localizada em fonte oficial (indício: resolução nº 6/2019-cpj, improbidade) relato de imprensa de 25/10/2019 dá conta de resolução nº 6/2019-cpj regulamentando tac em improbidade; nenhum texto oficial foi localizado. portal é spa sem repositório público de atos normativos; busca interna não indexa a norma; bni/sapl responde 503. não se conclui pela inexistência — apenas não há fonte oficial aberta.">
+<td class="uf">RO</td>
+<td class="norma"><b>Não localizada em fonte oficial (indício: Resolução nº 6/2019-CPJ, improbidade)</b><span class="sub">MPRO · — · 2019</span></td>
+<td class="sit"><span class="tag muted">Não localizado</span></td>
+</tr>
+<tr class="det" data-status="nao_localizado" data-orgao="—" data-ano="2019"
+ data-busca="ro rondônia mpro não localizada em fonte oficial (indício: resolução nº 6/2019-cpj, improbidade) relato de imprensa de 25/10/2019 dá conta de resolução nº 6/2019-cpj regulamentando tac em improbidade; nenhum texto oficial foi localizado. portal é spa sem repositório público de atos normativos; busca interna não indexa a norma; bni/sapl responde 503. não se conclui pela inexistência — apenas não há fonte oficial aberta.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>—</p>
+  <p class="lbl">Objeto da norma</p><p>Relato de imprensa de 25/10/2019 dá conta de Resolução nº 6/2019-CPJ regulamentando TAC em improbidade; nenhum texto oficial foi localizado.</p>
+  <p class="lbl">Observações</p><p>Portal é SPA sem repositório público de atos normativos; busca interna não indexa a norma; BNI/SAPL responde 503. Não se conclui pela inexistência — apenas não há fonte oficial aberta.</p>
+  <p><a class="btn" href="https://www.mpro.mp.br/" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2016"
+ data-busca="rr roraima mprr resolução cpj nº 004, de 17/05/2016 (versão compilada em 16/12/2024) regulamenta a instauração e tramitação do inquérito civil e disciplina celebração, requisitos, publicidade, fiscalização e execução do tac. não há resolução exclusiva de tac entre as 289 do portal; a res. cpj 003/2024 trata de anpc.">
+<td class="uf">RR</td>
+<td class="norma"><b>Resolução CPJ nº 004, de 17/05/2016 (versão compilada em 16/12/2024)</b><span class="sub">MPRR · CPJ / Órgão Especial · 2016</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2016"
+ data-busca="rr roraima mprr resolução cpj nº 004, de 17/05/2016 (versão compilada em 16/12/2024) regulamenta a instauração e tramitação do inquérito civil e disciplina celebração, requisitos, publicidade, fiscalização e execução do tac. não há resolução exclusiva de tac entre as 289 do portal; a res. cpj 003/2024 trata de anpc.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo X — arts. 25 a 31</p>
+  <p class="lbl">Objeto da norma</p><p>Regulamenta a instauração e tramitação do inquérito civil e disciplina celebração, requisitos, publicidade, fiscalização e execução do TAC.</p>
+  <p class="lbl">Observações</p><p>Não há resolução exclusiva de TAC entre as 289 do portal; a Res. CPJ 003/2024 trata de ANPC.</p>
+  <p><a class="btn" href="https://www.mprr.mp.br/servicos/download/resolucao-cpj-no-004-de-17-de-maio-de-2016-compila-2024-12-16-14-59-35.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="PGJ" data-ano="2017"
+ data-busca="rs rio grande do sul mprs provimento nº 71/2017-pgj (texto compilado, atualizado pelo provimento nº 80/2025) disciplina notícia de fato, inquérito civil, pp e procedimento administrativo, incluindo a regulação do compromisso de ajustamento de conduta e da recomendação. página oficial: mprs.mp.br/legislacao/provimentos/12274. os provimentos 58/2018 e 16/2021 (tac e anpc) foram revogados pelo provimento 39/2024-pgj.">
+<td class="uf">RS</td>
+<td class="norma"><b>Provimento nº 71/2017-PGJ (texto compilado, atualizado pelo Provimento nº 80/2025)</b><span class="sub">MPRS · PGJ · 2017</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="PGJ" data-ano="2017"
+ data-busca="rs rio grande do sul mprs provimento nº 71/2017-pgj (texto compilado, atualizado pelo provimento nº 80/2025) disciplina notícia de fato, inquérito civil, pp e procedimento administrativo, incluindo a regulação do compromisso de ajustamento de conduta e da recomendação. página oficial: mprs.mp.br/legislacao/provimentos/12274. os provimentos 58/2018 e 16/2021 (tac e anpc) foram revogados pelo provimento 39/2024-pgj.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo VII — arts. 34 e seguintes</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina notícia de fato, inquérito civil, PP e procedimento administrativo, incluindo a regulação do compromisso de ajustamento de conduta e da recomendação.</p>
+  <p class="lbl">Observações</p><p>Página oficial: mprs.mp.br/legislacao/provimentos/12274. Os Provimentos 58/2018 e 16/2021 (TAC e ANPC) foram revogados pelo Provimento 39/2024-PGJ.</p>
+  <p><a class="btn" href="https://www.mprs.mp.br/media/areas/gapp/images/prov_71_2017_compilado.pdf" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="PGJ" data-ano="2018"
+ data-busca="sc santa catarina mpsc ato nº 395/2018/pgj (alterado até o ato nº 744/2024/pgj) disciplina notícia de fato, instauração e tramitação de ic e pp, recomendações e celebração de compromisso de ajustamento de conduta. página canônica: mpsc.mp.br/atos-e-normas/detalhe?id=2366 (renderiza o mesmo documento).">
+<td class="uf">SC</td>
+<td class="norma"><b>Ato nº 395/2018/PGJ (alterado até o Ato nº 744/2024/PGJ)</b><span class="sub">MPSC · PGJ · 2018</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="PGJ" data-ano="2018"
+ data-busca="sc santa catarina mpsc ato nº 395/2018/pgj (alterado até o ato nº 744/2024/pgj) disciplina notícia de fato, instauração e tramitação de ic e pp, recomendações e celebração de compromisso de ajustamento de conduta. página canônica: mpsc.mp.br/atos-e-normas/detalhe?id=2366 (renderiza o mesmo documento).">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Arts. 25 a 35</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina notícia de fato, instauração e tramitação de IC e PP, recomendações e celebração de compromisso de ajustamento de conduta.</p>
+  <p class="lbl">Observações</p><p>Página canônica: mpsc.mp.br/atos-e-normas/detalhe?id=2366 (renderiza o mesmo documento).</p>
+  <p><a class="btn" href="https://documentos.mpsc.mp.br/portal/webparts/scn/detalhe?id=2366" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2015"
+ data-busca="se sergipe mpse resolução nº 008/2015-cpj (consolidada com as res. até 012/2025) consolida as normas sobre notícia de fato, pp, inquérito civil e procedimento administrativo, com seção específica do compromisso de ajustamento de conduta. atenção: o parágrafo único do art. 33 veda tac em improbidade com redação anterior à lei 14.230/2021. as res. cpj 024/2017 e 019/2025 não tratam de tac.">
+<td class="uf">SE</td>
+<td class="norma"><b>Resolução nº 008/2015-CPJ (consolidada com as Res. até 012/2025)</b><span class="sub">MPSE · CPJ / Órgão Especial · 2015</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2015"
+ data-busca="se sergipe mpse resolução nº 008/2015-cpj (consolidada com as res. até 012/2025) consolida as normas sobre notícia de fato, pp, inquérito civil e procedimento administrativo, com seção específica do compromisso de ajustamento de conduta. atenção: o parágrafo único do art. 33 veda tac em improbidade com redação anterior à lei 14.230/2021. as res. cpj 024/2017 e 019/2025 não tratam de tac.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Seção VIII — arts. 33 a 39</p>
+  <p class="lbl">Objeto da norma</p><p>Consolida as normas sobre notícia de fato, PP, inquérito civil e procedimento administrativo, com seção específica do compromisso de ajustamento de conduta.</p>
+  <p class="lbl">Observações</p><p>Atenção: o parágrafo único do art. 33 veda TAC em improbidade com redação anterior à Lei 14.230/2021. As Res. CPJ 024/2017 e 019/2025 não tratam de TAC.</p>
+  <p><a class="btn" href="https://sistemas.mpse.mp.br/PublicDoc/PublicacaoDocumento/AbrirDocumento.aspx?cd_documento=38423" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2021"
+ data-busca="sp são paulo mpsp resolução nº 1.342/2021-cpj, de 01/07/2021 (sei 29.0001.0123476.2021-37) disciplina notícia de fato, inquérito civil, pp, recomendações, audiência pública e celebração de compromissos de ajustamento de conduta. revogou o ato normativo nº 484/2006-cpj. o pdf da resolução no portal da biblioteca está indisponível; o link leva ao do mpsp de 02/07/2021, com o texto integral.">
+<td class="uf">SP</td>
+<td class="norma"><b>Resolução nº 1.342/2021-CPJ, de 01/07/2021 (SEI 29.0001.0123476.2021-37)</b><span class="sub">MPSP · CPJ / Órgão Especial · 2021</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CPJ / Órgão Especial" data-ano="2021"
+ data-busca="sp são paulo mpsp resolução nº 1.342/2021-cpj, de 01/07/2021 (sei 29.0001.0123476.2021-37) disciplina notícia de fato, inquérito civil, pp, recomendações, audiência pública e celebração de compromissos de ajustamento de conduta. revogou o ato normativo nº 484/2006-cpj. o pdf da resolução no portal da biblioteca está indisponível; o link leva ao do mpsp de 02/07/2021, com o texto integral.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Art. 5º e seguintes</p>
+  <p class="lbl">Objeto da norma</p><p>Disciplina notícia de fato, inquérito civil, PP, recomendações, audiência pública e celebração de compromissos de ajustamento de conduta.</p>
+  <p class="lbl">Observações</p><p>Revogou o Ato Normativo nº 484/2006-CPJ. O PDF da resolução no portal da biblioteca está indisponível; o link leva ao DO MPSP de 02/07/2021, com o texto integral.</p>
+  <p><a class="btn" href="https://www.mpsp.mp.br/w/dic3a1riooficialmpsp02072021" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr><tr class="row" data-status="regulamenta" data-orgao="CSMP" data-ano="2018"
+ data-busca="to tocantins mpto resolução csmp nº 005/2018, de 20/11/2018 (alterada pelas res. csmp 001/2019 e 001/2020) institui normas sobre procedimentos extrajudiciais, compromisso de ajustamento de conduta, recomendação, audiência pública e carta precatória. varredura das 132 resoluções cpj e das resoluções csmp não encontrou norma exclusiva de tac.">
+<td class="uf">TO</td>
+<td class="norma"><b>Resolução CSMP nº 005/2018, de 20/11/2018 (alterada pelas Res. CSMP 001/2019 e 001/2020)</b><span class="sub">MPTO · CSMP · 2018</span></td>
+<td class="sit"><span class="tag ok">Regulamenta</span></td>
+</tr>
+<tr class="det" data-status="regulamenta" data-orgao="CSMP" data-ano="2018"
+ data-busca="to tocantins mpto resolução csmp nº 005/2018, de 20/11/2018 (alterada pelas res. csmp 001/2019 e 001/2020) institui normas sobre procedimentos extrajudiciais, compromisso de ajustamento de conduta, recomendação, audiência pública e carta precatória. varredura das 132 resoluções cpj e das resoluções csmp não encontrou norma exclusiva de tac.">
+<td></td><td colspan="2">
+  <p class="lbl">Onde o TAC é disciplinado</p><p>Capítulo VI — arts. 29 e seguintes</p>
+  <p class="lbl">Objeto da norma</p><p>Institui normas sobre procedimentos extrajudiciais, compromisso de ajustamento de conduta, recomendação, audiência pública e carta precatória.</p>
+  <p class="lbl">Observações</p><p>Varredura das 132 resoluções CPJ e das resoluções CSMP não encontrou norma exclusiva de TAC.</p>
+  <p><a class="btn" href="https://athenas.mpto.mp.br/athenas/FileUploadController/get_public_file/ff7d29b1d381cd7272099c00d993c941" target="_blank" rel="noopener">Abrir fonte oficial ↗</a></p>
+</td></tr>
+</tbody></table>
+
+<div class="method">
+<h3>Metodologia e ressalvas</h3>
+<p><b>Universo:</b> 26 Ministérios Públicos estaduais + MPDFT, lista canônica da CNPG.</p>
+<p><b>Coleta:</b> páginas oficiais de atos normativos, resoluções e legislação, Conselhos Superiores e Colégios de Procuradores, busca interna dos portais e diários oficiais. Cada link foi aberto na sessão de pesquisa e conferido por HTTP 200 e presença literal da expressão “ajustamento de conduta” (PDFs por <i>pdftotext</i>, digitalizações por OCR).</p>
+<p><b>Critério de status:</b> “Regulamenta” = existe norma interna vigente que disciplina o TAC, ainda que dentro da resolução geral de procedimentos; “Sem norma própria” = não localizada norma local, com aplicação direta da Resolução CNMP nº 179/2017; “Não localizado” = norma provavelmente existente, mas sem fonte oficial acessível.</p>
+<p><b>Ressalvas:</b> “não localizado” não equivale a inexistência — portais têm buscas limitadas e PDFs desativados (casos de ES, RN e RO). Em unidades com mais de um ato (PB, MS, MG, PI, PE), registrou-se o ato principal e a norma específica de improbidade quando existente. Datas referem-se à edição; onde houve consolidação, indica-se o ano da versão consolidada.</p>
+</div>
+
+<footer>Levantamento documental — não substitui a conferência da vigência atualizada no portal de cada Ministério Público. Última verificação: 25/11/2026.</footer>
+</div>
+<script>
+const q=document.getElementById('q'), org=document.getElementById('org'), count=document.getElementById('count');
+let f='all';
+function apply(){
+  const s=(q.value||'').toLowerCase().trim();
+  const o=org.value;
+  let n=0;
+  document.querySelectorAll('tr.row').forEach(r=>{
+    const det=r.nextElementSibling;
+    const ok=(f==='all'||r.dataset.status===f)&&(o==='all'||r.dataset.orgao===o)&&(!s||r.dataset.busca.includes(s));
+    r.style.display=ok?'':'none'; det.style.display=ok?'':'none';
+    if(!ok) det.classList.remove('open');
+    if(ok) n++;
+  });
+  count.textContent=n+(n===1?' unidade':' unidades');
+}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{
+  f=b.dataset.f; document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b)); apply();
+}));
+q.addEventListener('input',apply); org.addEventListener('change',apply);
+document.querySelectorAll('tr.row').forEach(r=>r.addEventListener('click',()=>{
+  const d=r.nextElementSibling; d.classList.toggle('open');
+}));
+apply();
+</script>
+</body></html>
